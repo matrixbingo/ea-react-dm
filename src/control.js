@@ -1,4 +1,4 @@
-import {DEFAULT_METHOD_FIX,DEFAULT} from './model'
+import {DEFAULT_METHOD_FIX, DEFAULT} from './model'
 import RTools from 'gfs-react-tools'
 import './utils'
 import extend from 'extend'
@@ -20,21 +20,21 @@ let curl = {
      * @param modelName {string} model名字，默认是绑定model之后的modelname
      * @return Function
      * @example
-        $Control(TestModel)
-        class TestControl {
+     $Control(TestModel)
+     class TestControl {
             static delTest(data,c){
                 return this.del('age')
             }
         }
      */
-    del:function(path,data,modelName=this.__modelName){
-        path = path.indexOf('.')>=0?path.split('.'):Array.prototype.concat.call([],path)
+    del: function (path, data, modelName = this.__modelName) {
+        path = path.indexOf('.') >= 0 ? path.split('.') : Array.prototype.concat.call([], path)
 
-        return (dispatch)=>{
+        return (dispatch) => {
             dispatch({
-                type:this.getModelName('del',true,modelName),//`${DEFAULT}${DEFAULT_METHOD_FIX}${modelName}${DEFAULT_METHOD_FIX}del`,
-                path:path,
-                data:data
+                type: this.getModelName('del', true, modelName),//`${DEFAULT}${DEFAULT_METHOD_FIX}${modelName}${DEFAULT_METHOD_FIX}del`,
+                path: path,
+                data: data
             })
         }
     },
@@ -46,8 +46,8 @@ let curl = {
      * @param modelName {string} model名字，默认是绑定model之后的modelname
      * @return Function
      * @example
-        $Control(TestModel)
-        class TestControl {
+     $Control(TestModel)
+     class TestControl {
             static updateTest(data,c){
                 return (dispatch)=>{
                     fetch('/test').then((data)=>{
@@ -57,36 +57,36 @@ let curl = {
             }
         }
      */
-    update:function(path,data,modelName=this.__modelName){
-        if(arguments.length == 1){
+    update: function (path, data, modelName = this.__modelName) {
+        if (arguments.length == 1) {
             data = arguments[0]
             path = ''
-        }else{
-            path = path.indexOf('.')>=0?path.split('.'):Array.prototype.concat.call([],path)
+        } else {
+            path = path.indexOf('.') >= 0 ? path.split('.') : Array.prototype.concat.call([], path)
         }
-        return (dispatch)=>{
+        return (dispatch) => {
             dispatch({
-                type:this.getModelName('update',true,modelName),//`${DEFAULT}${DEFAULT_METHOD_FIX}${modelName}${DEFAULT_METHOD_FIX}update`,
-                path:path,
-                data:data
+                type: this.getModelName('update', true, modelName),//`${DEFAULT}${DEFAULT_METHOD_FIX}${modelName}${DEFAULT_METHOD_FIX}update`,
+                path: path,
+                data: data
             })
         }
     },
     /**
      * 插入store中某条数据
-     * @method insert
-     * @param path {string} 需要被删除的属性地址，根据具体的对象结构，例如一个结构为：var data={name:'test',other:{age:18}}的对象，如果想要在data中新增一些字段应该这样:this.insert({sex:'男'})
+     * @method add
+     * @param path {string} 需要被删除的属性地址，根据具体的对象结构，例如一个结构为：var data={name:'test',other:{age:18}}的对象，如果想要在data中新增一些字段应该这样:this.add({sex:'男'})
      * @param data {string | object} 需要保存的值，新的值会覆盖之前的值
      * @param isImmutable {boolean} 是否将值转换为Immutable类型，默认为false，如果更新的值为object类型建议设置为true
      * @param modelName {string} model名字，默认是绑定model之后的modelname
      * @return Function
      * @example
-        $Control(TestModel)
-        class TestControl {
-            static insertTest(data,c){
+     $Control(TestModel)
+     class TestControl {
+            static addTest(data,c){
                 return (dispatch)=>{
                     fetch('/test').then((data)=>{
-                        dispatch(this.insert({
+                        dispatch(this.add({
                             sex:'男'
                         }) )
                     })
@@ -94,19 +94,19 @@ let curl = {
             }
         }
      */
-    insert:function(path,data,isImmutable=false,modelName=this.__modelName){
-        if(arguments.length == 1){
+    add: function (path, data, isImmutable = false, modelName = this.__modelName) {
+        if (arguments.length == 1) {
             data = arguments[0]
             path = ''
-        }else{
-            path = path.indexOf('.')>=0?path.split('.'):Array.prototype.concat.call([],path)
+        } else {
+            path = path.indexOf('.') >= 0 ? path.split('.') : Array.prototype.concat.call([], path)
         }
-        return (dispatch)=>{
+        return (dispatch) => {
             dispatch({
-                type:this.getModelName('update',true,modelName),//`${DEFAULT}${DEFAULT_METHOD_FIX}${modelName}${DEFAULT_METHOD_FIX}update`,
-                path:path,
-                data:data,
-                isImmutable:isImmutable
+                type: this.getModelName('update', true, modelName),//`${DEFAULT}${DEFAULT_METHOD_FIX}${modelName}${DEFAULT_METHOD_FIX}update`,
+                path: path,
+                data: data,
+                isImmutable: isImmutable
             })
         }
     },
@@ -119,8 +119,8 @@ let curl = {
      * @param modelName {string} model名字，默认是绑定model之后的modelname
      * @return Function
      * @example
-        $Control(TestModel)
-        class TestControl {
+     $Control(TestModel)
+     class TestControl {
             static saveTest(data,c){
                 return (dispatch)=>{
                     fetch('/test').then((data)=>{
@@ -130,13 +130,13 @@ let curl = {
             }
         }
      */
-    save:function(path,data,isImmutable=false,modelName=this.__modelName){
-        return (dispatch)=> {
+    save: function (path, data, isImmutable = false, modelName = this.__modelName) {
+        return (dispatch) => {
             dispatch({
-                type: this.getModelName('save',true,modelName),//`${DEFAULT}${DEFAULT_METHOD_FIX}${modelName}${DEFAULT_METHOD_FIX}save`,
+                type: this.getModelName('save', true, modelName),//`${DEFAULT}${DEFAULT_METHOD_FIX}${modelName}${DEFAULT_METHOD_FIX}save`,
                 path: path.indexOf('.') >= 0 ? path.split('.') : Array.prototype.concat.call([], path),
                 data: data,
-                isImmutable:isImmutable
+                isImmutable: isImmutable
             })
         }
     }
@@ -212,64 +212,65 @@ let curl = {
  *          }
  *      }
  * */
-export function Sync(anywhere){
+export function Sync(anywhere) {
 
     let url = ''
     let opts = {}
     let error = null
     //修正参数
-    if(typeof(anywhere) === 'string' ){
+    if (typeof(anywhere) === 'string') {
         url = anywhere
-    }else if(typeof(anywhere) ==='object' ){
+    } else if (typeof(anywhere) === 'object') {
         url = anywhere.url
         opts = anywhere
     }
 
-    if(arguments.length>=2){
+    if (arguments.length >= 2) {
         opts = arguments[1]
     }
     //todo error作用域无法指向target，target对象丢失，强制制定为undefined，解决作用域丢失问题
-    if(opts.error){
+    if (opts.error) {
         error = opts.error
     }
 
-    return function(target, name, descriptor){
+    return function (target, name, descriptor) {
 
-        let fn = ((success = ()=>{})=>{
+        let fn = ((success = () => {
+        }) => {
             let fn = success
 
-            return function(){
+            return function () {
 
                 var args = Array.prototype.slice.call(arguments)
-                var methodArg = args[args.length-1] || {}
+                var methodArg = args[args.length - 1] || {}
 
-                if(typeof(methodArg)==='object' && methodArg.url){
+                if (typeof(methodArg) === 'object' && methodArg.url) {
                     url = methodArg.url
                 }
 
-                return (dispatch)=>{
-                    if(opts && typeof(opts.method) =='undefined' ){
+                return (dispatch) => {
+                    if (opts && typeof(opts.method) == 'undefined') {
                         opts.method = 'get'
                     }
-                    if(url){
-                        fetch(url,extend(opts,methodArg.url ||methodArg.body ?methodArg:{} ) ).then(function(){
-                            let result = fn.apply(target,Array.prototype.slice.call(arguments).concat(args) )
-                            if(result instanceof Function){
+                    if (url) {
+                        fetch(url, extend(opts, methodArg.url || methodArg.body ? methodArg : {})).then(function () {
+                            let result = fn.apply(target, Array.prototype.slice.call(arguments).concat(args))
+                            if (result instanceof Function) {
                                 result(dispatch)
-                            }else if(result && typeof(result) === 'object'){
-                                dispatch(extend(result||{},{
-                                    type:`${target.__modelName}${DEFAULT_METHOD_FIX}${result.type ? result.type:name}`,
-                                    data:result.data? result.data : {}
-                                }) )
+                            } else if (result && typeof(result) === 'object') {
+                                dispatch(extend(result || {}, {
+                                    type: `${target.__modelName}${DEFAULT_METHOD_FIX}${result.type ? result.type : name}`,
+                                    data: result.data ? result.data : {}
+                                }))
                             }
-                        },error ||  target[name+'Error'] )
-                    }else{
-                        let result = fn.apply(target,args )
-                        if(result && typeof(result) === 'object'){
-                            dispatch(extend(result||{},{
-                                type:`${target.__modelName}${DEFAULT_METHOD_FIX}${result.type ? result.type:name}`,
-                                data:result.data? result.data : {}
-                            }) )
+                        }, error || target[name + 'Error'])
+                    } else {
+                        let result = fn.apply(target, args)
+                        if (result && typeof(result) === 'object') {
+                            dispatch(extend(result || {}, {
+                                type: `${target.__modelName}${DEFAULT_METHOD_FIX}${result.type ? result.type : name}`,
+                                data: result.data ? result.data : {}
+                            }))
                         }
                     }
                 }
@@ -302,7 +303,7 @@ export function Sync(anywhere){
  *
  *               return (dispatch)=>{
  *                   fetch('/test.json'[,params]).then((data)=>{
- *                       //control中默认提供update、del、insert、save四种操作数据方法，会根据不同的control名生成，如下根据testControl生成的方法testControlUpdate
+ *                       //control中默认提供update、del、add、save四种操作数据方法，会根据不同的control名生成，如下根据testControl生成的方法testControlUpdate
  *
  *                       dispatch(this.testControlUpdate('age','ajax改变的age：'+data.age) )
  *                   })
@@ -324,53 +325,54 @@ export function Sync(anywhere){
  *          }
  *      }
  * */
-export function Control(model={},loadingbar,mock){
+export function Control(model = {}, loadingbar, mock) {
 
-    if(arguments.length === 2 ){
+    if (arguments.length === 2) {
         RTools.addLoadingBar(loadingbar)
     }
 
-    if(arguments.length === 3){
+    if (arguments.length === 3) {
         RTools.addMock(mock)
     }
 
-   return function(target){
-       //target = extend(target,curl)
-       //let name = ''//target.name||''
-      // let control  = new target()
-       //循环遍历方法，将返回
-       //将方法的作用域改成对象本身
-       var t = target
-       var p ={}
-       for(var item in t) {
-           p[item] = t[item] instanceof Function ? t[item].bind(t ) : t[item]
-       }
-       model.controls = p
-       controlList[model.modelName] = model
+    return function (target) {
+        //target = extend(target,curl)
+        //let name = ''//target.name||''
+        // let control  = new target()
+        //循环遍历方法，将返回
+        //将方法的作用域改成对象本身
+        var t = target
+        var p = {}
+        for (var item in t) {
+            p[item] = t[item] instanceof Function ? t[item].bind(t) : t[item]
+        }
+        model.controls = p
+        controlList[model.modelName] = model
 
-       for(var cItem in curl){
-           target[/*name.replace(/^.{0,1}/,function(c){return c.toLowerCase()})+cItem.replace(/^.{0,1}/,function(c){return c.toUpperCase()})*/cItem] = curl[cItem]
-       }
-       target.__modelName = model.modelName
-       /**
-        * 获取model方法名全名，在未传任何值时返回方法前缀
-        * @method getModelName
-        * @param actionName {string} default='',方法名，可选
-        * @param isDefault {boolean} 是否获取系统中提供的方法名,默认false，可选
-        * @param modelName {string} model名字，可选
-        * @return string
-        */
-       target.getModelName= function(actionName='',isDefault=false,modelName = target.__modelName){
-           return `${isDefault?DEFAULT+DEFAULT_METHOD_FIX:''}${modelName}${DEFAULT_METHOD_FIX}${actionName}`
-       }
-       return model
-       //todo 解决对象私有属性访问，同样是对象丢失造成
-       //return {...target.prototype}
-   }
+        for (var cItem in curl) {
+            target[/*name.replace(/^.{0,1}/,function(c){return c.toLowerCase()})+cItem.replace(/^.{0,1}/,function(c){return c.toUpperCase()})*/cItem] = curl[cItem]
+        }
+        target.__modelName = model.modelName
+        target.model = model
+        /**
+         * 获取model方法名全名，在未传任何值时返回方法前缀
+         * @method getModelName
+         * @param actionName {string} default='',方法名，可选
+         * @param isDefault {boolean} 是否获取系统中提供的方法名,默认false，可选
+         * @param modelName {string} model名字，可选
+         * @return string
+         */
+        target.getModelName = function (actionName = '', isDefault = false, modelName = target.__modelName) {
+            return `${isDefault ? DEFAULT + DEFAULT_METHOD_FIX : ''}${modelName}${DEFAULT_METHOD_FIX}${actionName}`
+        }
+        return model
+        //todo 解决对象私有属性访问，同样是对象丢失造成
+        //return {...target.prototype}
+    }
 }
-export function getControl(modelName){
 
-    return controlList[modelName.toLowerCase() ]
+export function getControl(modelName) {
+    return controlList[modelName.toLowerCase()]
 }
 
 

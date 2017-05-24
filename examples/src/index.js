@@ -1,13 +1,16 @@
 import {Model,Control,Sync,View,page} from '../../src/index.js'
 import Immutable from 'immutable'
+import Hello from './demo/Hello'
+
+new Hello().show()
 
 @Model
 class TestModel {
-    static __name = 'test'
+    //static __name = 'test'
     static age = 20
     static xq = null
     constructor(){
-       
+
     }
 }
 
@@ -40,7 +43,7 @@ class TestControl {
         }*/
     }
     static insertTest(path,data){
-          return this.save(path,data)
+          return this.add(path,data)
     }
 }
 

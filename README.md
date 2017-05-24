@@ -1,4 +1,4 @@
-# gfs-react-dm
+# gfs-react-dm的学习demo，测试用
 将react、redux整合一起使用的繁琐步骤进行封装，对外提供@View、@Control、@Model分别对应react component、redux action、redux store调用 						
 
 [文档](https://future-team.github.io/gfs-react-dm/doc)请戳[文档](https://future-team.github.io/gfs-react-dm/doc)

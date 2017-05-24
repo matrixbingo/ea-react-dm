@@ -47,7 +47,7 @@ export function page(opts={}){
 
     opts.middleware = [thunkMiddleware].concat(opts.middleware||[])
 
-    if(opts.debug || location.port!=''){
+    if(opts.debug || location.hostname == 'localhost'){
         opts.middleware.push(require('redux-logger')() )
     }
 

@@ -1,5 +1,5 @@
 //import {bindingMixin} from 'gfs-react-redux-twoway-binding'
-import { connect } from 'react-redux'
+import {connect} from 'react-redux'
 import extend from 'extend'
 /**
  * 视图
@@ -17,7 +17,7 @@ import extend from 'extend'
  *       //这里由于@为文档关键符号，所以下面将以$代替
  *       //@View(TestControl)
  *       $View(TestControl)
-         class TestComponent extends Component {
+ class TestComponent extends Component {
             constructor(props) {
                 super(props)
             }
@@ -41,24 +41,24 @@ import extend from 'extend'
             }
         }
  * */
-export  function View(actions){
+export function View(actions) {
 
-    return function(target){
+    return function (target) {
 
-        if(actions){
+        if (actions) {
 
-            actions =Array.prototype.concat.call([],actions)
+            actions = Array.prototype.concat.call([], actions)
             let controls = {}
-            for(let i=0,len=actions.length;i<len;i++){
-                controls = extend(controls,actions[i].controls)
+            for (let i = 0, len = actions.length; i < len; i++) {
+                controls = extend(controls, actions[i].controls)
             }
-            return connect(function(state){
+            return connect(function (state) {
                 let stories = {}
-                for(let i=0,len=actions.length;i<len;i++){
-                    stories[actions[i].modelName ] =  state[actions[i].modelName ]
+                for (let i = 0, len = actions.length; i < len; i++) {
+                    stories[actions[i].modelName] = state[actions[i].modelName]
                 }
                 return stories
-            },controls ||{})(target)
+            }, controls || {})(target)
         }
 
         return target

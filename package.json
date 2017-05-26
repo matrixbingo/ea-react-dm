@@ -1,6 +1,6 @@
 {
   "name": "gfs-react-dm",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "简化react和redux的繁杂流程，更简单的数据操作管理",
   "repository": {
     "type": "git",
@@ -77,7 +77,7 @@
     "del": "^2.2.2"
   },
   "scripts": {
-    "build": "node_modules/.bin/gulp && node_modules/.bin/gulp min",
+    "build": "node_modules/.bin/gulp",
     "test": "karma start",
     "demo": "node_modules/.bin/gulp demo",
     "doc": "gfsdoc ||node_modules/.bin/gfsdoc",

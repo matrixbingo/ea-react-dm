@@ -13,7 +13,7 @@ export const DEFAULT = 'default'
 
 function getField(data, path) {
     var newpath = path.concat()
-    window.console.log('getField', path)
+    //window.console.log('getField', path)
     try {
         for (var i = 0, len = newpath.length, p, v; i < len; i++) {
 

@@ -1,4 +1,5 @@
 import {Model,Control,Sync,View,page} from '../../src/index.js'
+import Action from '../../lib/base/Action'
 import Immutable from 'immutable'
 import Hello from './demo/Hello'
 
@@ -9,6 +10,9 @@ class TestModel {
     //static __name = 'test'
     static age = 20
     static xq = null
+    static a ={
+        b : 12
+    }
     constructor(){
 
     }
@@ -24,7 +28,7 @@ let action = new TestAction()
 
 
 @Control(TestModel)
-class TestControl {
+class TestControl extends Action{
     //Object.defineProperty(target, key, descriptor);
     @Sync('/test.json',{
         error:(err)=>{
@@ -67,13 +71,19 @@ class TestComponent extends Component {
 
     static defaultProps={}
 
+    click(){
+        this.props.setValueByReducers('TestModel.a.b', 9821)
+    }
+
     render() {
 
         console.log('age:',this.props.testmodel.get('age') )
+        console.log('a.b', this.props.testmodel.get('a').get('b'))
         return (
             <div>
-                {this.props.testmodel.get('age')}
-                <span style={{color:'red'}}>{this.props.testmodel.getIn(['xq','test','name'])}</span>
+                <span style={{color:'red'}} onClick={this.click.bind(this)}>
+                    {this.props.testmodel.getIn(['xq','test','name'])}
+                </span>
             </div>
         )
     }

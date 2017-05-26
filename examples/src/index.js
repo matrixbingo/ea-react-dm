@@ -1,5 +1,5 @@
 import {Model,Control,Sync,View,page} from '../../src/index.js'
-import Action from '../../lib/base/Action'
+import Action from '../../src/base/Action'
 import Immutable from 'immutable'
 import Hello from './demo/Hello'
 

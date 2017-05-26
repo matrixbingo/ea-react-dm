@@ -1,5 +1,5 @@
 {
-  "name": "gfs-react-dm",
+  "name": "ea-react-dm",
   "version": "1.1.0",
   "description": "简化react和redux的繁杂流程，更简单的数据操作管理",
   "repository": {

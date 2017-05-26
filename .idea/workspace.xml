@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49015dac-f036-4e54-9f77-74f43a8f1e8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintignore" afterPath="$PROJECT_DIR$/.eslintignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/dist/index.js" afterPath="$PROJECT_DIR$/examples/dist/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/src/index.js" afterPath="$PROJECT_DIR$/examples/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/control.js" afterPath="$PROJECT_DIR$/lib/control.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/index.js" afterPath="$PROJECT_DIR$/lib/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/model.js" afterPath="$PROJECT_DIR$/lib/model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/utils.js" afterPath="$PROJECT_DIR$/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/valuelink.js" afterPath="$PROJECT_DIR$/lib/valuelink.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/view.js" afterPath="$PROJECT_DIR$/lib/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control.js" afterPath="$PROJECT_DIR$/src/control.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model.js" afterPath="$PROJECT_DIR$/src/model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils.js" afterPath="$PROJECT_DIR$/src/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/valuelink.js" afterPath="$PROJECT_DIR$/src/valuelink.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view.js" afterPath="$PROJECT_DIR$/src/view.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -122,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="19" />
+              <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -133,7 +118,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="244">
-                <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+                <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -591,12 +576,12 @@
       <workItem from="1495597284758" duration="2675000" />
       <workItem from="1495601145870" duration="18156000" />
       <workItem from="1495767823759" duration="8332000" />
-      <workItem from="1495780884985" duration="230000" />
+      <workItem from="1495780884985" duration="370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29393000" />
+    <option name="totallyTimeSpent" value="29533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,7 +594,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2613277" sideWeight="0.43376067" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20389885" sideWeight="0.5662393" order="0" side_tool="false" content_ui="combo" />
@@ -619,7 +603,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49441963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.453125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.453125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -997,7 +981,7 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="19" />
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1006,7 +990,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="244">
-            <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
             <folding />
           </first_editor>
           <second_editor />

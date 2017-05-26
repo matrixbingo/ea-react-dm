@@ -107,6 +107,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	        key: 'xq',
 	        value: null,
 	        enumerable: true
+	    }, {
+	        key: 'a',
+	        value: {
+	            b: 12
+	        },
+	        enumerable: true
 	    }]);
 	
 	    function TestModel() {
@@ -160,7 +166,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	        })],
 	        value: function saveTest(data, c) {
-	            debugger;
 	            //this.getChange()('age', 10)
 	            return this.update('age', 'ajax改变的age：' + data.age);
 	        }
@@ -189,16 +194,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }, 1000);
 	    };
 	
+	    TestComponent.prototype.click = function click() {
+	        this.props.setValueByReducers('TestModel.a.b', 9821);
+	    };
+	
 	    TestComponent.prototype.render = function render() {
 	
 	        console.log('age:', this.props.testmodel.get('age'));
+	        console.log('a.b', this.props.testmodel.get('a').get('b'));
 	        return _react2['default'].createElement(
 	            'div',
 	            null,
-	            this.props.testmodel.get('age'),
 	            _react2['default'].createElement(
 	                'span',
-	                { style: { color: 'red' } },
+	                { style: { color: 'red' }, onClick: this.click.bind(this) },
 	                this.props.testmodel.getIn(['xq', 'test', 'name'])
 	            )
 	        );
@@ -6308,7 +6317,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.DEFAULT = DEFAULT;
 	function getField(data, path) {
 	    var newpath = path.concat();
-	    window.console.log('getField', path);
+	    //window.console.log('getField', path)
 	    try {
 	        for (var i = 0, len = newpath.length, p, v; i < len; i++) {
 	
@@ -12999,7 +13008,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	
 	    Action.setValueByReducers = function setValueByReducers(valueLink, val) {
-	        valueLink = str.match(/\.(.+?)$/, valueLink)[1];
+	        valueLink = valueLink.match(/\.(.+?)$/, valueLink)[1];
 	        return this.update(valueLink, val);
 	    };
 	

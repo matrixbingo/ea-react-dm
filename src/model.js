@@ -131,7 +131,7 @@ export function Model(target) {
             store: null
         }
     }
-    let modelName = target.name.toLowerCase() || target.__name.toLowerCase()
+    let modelName = target.__name.toLowerCase() || target.name.toLowerCase()
 
     if (modelName.indexOf('model') <= -1) {
         modelName += 'model'

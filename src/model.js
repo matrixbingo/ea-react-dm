@@ -48,9 +48,9 @@ let curl = {
         action.data = Immutable.fromJS(action.data)
         return action.path ? data.mergeIn(action.path, action.data) : data.merge(action.data)
     },
-    save:function(data,action){
-        data = getField(data,action.path)
-        return data.setIn(action.path,action.isImmutable ?Immutable.fromJS(action.data) : action.data)
+    save: function (data, action) {
+        data = getField(data, action.path)
+        return data.setIn(action.path, action.isImmutable ? Immutable.fromJS(action.data) : action.data)
     },
     add: function (data, action) {
         data = getField(data, action.path)
@@ -125,35 +125,44 @@ function implement(target = {}, modelName = '', param = {property: {}, method: {
             }
         }
  * */
-export function Model(target) {
-    let params = {}
-    //读取字段组成新的对象
-    if (typeof(target.__name) == 'undefined' && typeof(target.name) == 'undefined') {
-        window.console && window.console.warn('[create model error] ', 'Model中必须存在__name属性，并赋予store名称，例如: static __name="testmodel"')
+export function Model(name) {
+    const isObj = (obj) => {
+        return Object.prototype.toString.call(obj) === '[object Function]'
+    }
+    const model = function (target) {
+        let params = {}
+        //读取字段组成新的对象
+        if (typeof(target.__name) == 'undefined' && typeof(target.name) == 'undefined') {
+            window.console && window.console.warn('[create model error] ', 'Model中必须存在__name属性，并赋予store名称，例如: static __name="testmodel"')
+            return {
+                modelName: '',
+                store: null
+            }
+        }
+        let modelName = name && !isObj(name) ? name.toLowerCase() : target.__name ? target.__name.toLowerCase() : target.name.toLowerCase()
+
+        if (modelName.indexOf('model') <= -1) {
+            modelName += 'model'
+        }
+
+        //取得属性或方法
+        params = implement(target, modelName)
+        params = implement(curl, modelName, params, DEFAULT)
+
+        let store = createReducer(modelName, Immutable.fromJS(params.property || {}), params.method)
+
+        __gfs_mvc_m_list[`${modelName}`] = store
+
         return {
-            modelName: '',
-            store: null
+            modelName: modelName,
+            store: store
         }
     }
-    let modelName = target.__name ? target.__name.toLowerCase() : target.name.toLowerCase()
-
-    if (modelName.indexOf('model') <= -1) {
-        modelName += 'model'
+    if (isObj(name)) {
+        const target = name
+        return (model)(target)
     }
-
-    //取得属性或方法
-    params = implement(target, modelName)
-    params = implement(curl, modelName, params, DEFAULT)
-
-    let store = createReducer(modelName, Immutable.fromJS(params.property || {}), params.method)
-
-    __gfs_mvc_m_list[`${modelName}`] = store
-
-    return {
-        modelName: modelName,
-        store: store
-    }
-
+    return model
 }
 
 export function getActionTypes(typeName) {

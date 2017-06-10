@@ -1,3 +1,5 @@
+import Immutable from 'immutable'
+
 /**
  *
  * 组件的双向绑定用，修改对应path的数据，继承可选
@@ -14,7 +16,7 @@ export default class Action {
         }
         valueLink = valueLink.match(/\.(.+?)$/, valueLink)[1]
         if (isEmptyObject(val)) {
-            return this.save(valueLink, val)
+            return this.save(valueLink, Immutable.fromJS(val))
         }
         return this.update(valueLink, val)
     }

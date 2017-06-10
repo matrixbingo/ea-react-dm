@@ -6,7 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/src/index.js" afterPath="$PROJECT_DIR$/examples/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/model.js" afterPath="$PROJECT_DIR$/lib/model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base/Action.js" afterPath="$PROJECT_DIR$/src/base/Action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model.js" afterPath="$PROJECT_DIR$/src/model.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="84" column="63" lean-forward="false" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="63" />
+            <state relative-caret-position="1095">
+              <caret line="76" column="37" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -36,19 +35,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-              <folding>
-                <marker date="1497052496000" expanded="true" signature="103:175" ph="//..." />
-                <marker date="1497052496000" expanded="true" signature="184:329" ph="..." />
-                <marker date="1497052496000" expanded="true" signature="331:408" ph="/** 提供Model、View、Control、Sync、RTools等系列便捷类库 ...*/" />
-                <marker date="1497052496000" expanded="true" signature="410:442" ph="/** 页面渲染 ...*/" />
-                <marker date="1497052496000" expanded="true" signature="444:1012" ph="/** @method page ...*/" />
-                <marker date="1497052496000" expanded="true" signature="1042:1810" ph="{...}" />
-                <marker date="1497052496000" expanded="true" signature="1096:1154" ph="{...}" />
-                <marker date="1497052496000" expanded="true" signature="1113:1148" ph="{&quot;module&quot;: opts...}" />
-                <marker date="1497052496000" expanded="true" signature="1279:1343" ph="{...}" />
-                <marker date="1497052496000" expanded="true" signature="1380:1762" ph="{&quot;container&quot;: 'root'...}" />
-                <marker date="1497052496000" expanded="true" signature="1503:1710" ph="//..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,8 +63,8 @@
       <file leaf-file-name="model.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="48" column="41" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="41" />
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="33" />
               <folding>
                 <element signature="n#!!block;n#getField#0" expanded="false" />
                 <element signature="n#!!block;n#implement#0" expanded="false" />
@@ -87,11 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Action.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Action.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/base/Action.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="225">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,23 +129,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="150">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
-                <marker date="1497062354000" expanded="true" signature="2102:2290" ph="{&quot;build&quot;: &quot;node_modules/.bin/gulp &amp;&amp; node_modules/.bin/gulp min&quot;...}" />
+                <marker date="1497064673000" expanded="true" signature="2102:2290" ph="{&quot;build&quot;: &quot;node_modules/.bin/gulp &amp;&amp; node_modules/.bin/gulp min&quot;...}" />
               </folding>
             </state>
           </provider>
@@ -219,10 +206,10 @@
         <option value="$PROJECT_DIR$/lib/base/Action.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/examples/src/index.js" />
         <option value="$PROJECT_DIR$/src/model.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/examples/src/index.js" />
         <option value="$PROJECT_DIR$/src/base/Action.js" />
       </list>
     </option>
@@ -353,6 +340,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ea-react-dm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ea-react-dm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ea-react-dm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ea-react-dm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,7 +571,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48738000" />
+    <option name="totallyTimeSpent" value="50249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -624,13 +643,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1463">
@@ -656,7 +668,7 @@
         <state relative-caret-position="988">
           <caret line="52" column="26" lean-forward="false" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
           <folding>
-            <marker date="1497062354000" expanded="true" signature="2102:2290" ph="{&quot;build&quot;: &quot;node_modules/.bin/gulp &amp;&amp; node_modules/.bin/gulp min&quot;...}" />
+            <marker date="1497064673000" expanded="true" signature="2102:2290" ph="{&quot;build&quot;: &quot;node_modules/.bin/gulp &amp;&amp; node_modules/.bin/gulp min&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -666,19 +678,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1497052496000" expanded="true" signature="103:175" ph="//..." />
-            <marker date="1497052496000" expanded="true" signature="184:329" ph="..." />
-            <marker date="1497052496000" expanded="true" signature="331:408" ph="/** 提供Model、View、Control、Sync、RTools等系列便捷类库 ...*/" />
-            <marker date="1497052496000" expanded="true" signature="410:442" ph="/** 页面渲染 ...*/" />
-            <marker date="1497052496000" expanded="true" signature="444:1012" ph="/** @method page ...*/" />
-            <marker date="1497052496000" expanded="true" signature="1042:1810" ph="{...}" />
-            <marker date="1497052496000" expanded="true" signature="1096:1154" ph="{...}" />
-            <marker date="1497052496000" expanded="true" signature="1113:1148" ph="{&quot;module&quot;: opts...}" />
-            <marker date="1497052496000" expanded="true" signature="1279:1343" ph="{...}" />
-            <marker date="1497052496000" expanded="true" signature="1380:1762" ph="{&quot;container&quot;: 'root'...}" />
-            <marker date="1497052496000" expanded="true" signature="1503:1710" ph="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -694,19 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
-          <folding>
-            <marker date="1497052496000" expanded="true" signature="103:175" ph="//..." />
-            <marker date="1497052496000" expanded="true" signature="184:329" ph="..." />
-            <marker date="1497052496000" expanded="true" signature="331:408" ph="/** 提供Model、View、Control、Sync、RTools等系列便捷类库 ...*/" />
-            <marker date="1497052496000" expanded="true" signature="410:442" ph="/** 页面渲染 ...*/" />
-            <marker date="1497052496000" expanded="true" signature="444:1012" ph="/** @method page ...*/" />
-            <marker date="1497052496000" expanded="true" signature="1042:1810" ph="{...}" />
-            <marker date="1497052496000" expanded="true" signature="1096:1154" ph="{...}" />
-            <marker date="1497052496000" expanded="true" signature="1113:1148" ph="{&quot;module&quot;: opts...}" />
-            <marker date="1497052496000" expanded="true" signature="1279:1343" ph="{...}" />
-            <marker date="1497052496000" expanded="true" signature="1380:1762" ph="{&quot;container&quot;: 'root'...}" />
-            <marker date="1497052496000" expanded="true" signature="1503:1710" ph="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -770,7 +758,7 @@
         <state relative-caret-position="330">
           <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="7" />
           <folding>
-            <marker date="1497062354000" expanded="true" signature="2102:2290" ph="{&quot;build&quot;: &quot;node_modules/.bin/gulp &amp;&amp; node_modules/.bin/gulp min&quot;...}" />
+            <marker date="1497064673000" expanded="true" signature="2102:2290" ph="{&quot;build&quot;: &quot;node_modules/.bin/gulp &amp;&amp; node_modules/.bin/gulp min&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -965,16 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <marker date="1497062354000" expanded="true" signature="2102:2290" ph="{&quot;build&quot;: &quot;node_modules/.bin/gulp &amp;&amp; node_modules/.bin/gulp min&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-115">
@@ -986,26 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-          <folding>
-            <marker date="1497052496000" expanded="true" signature="103:175" ph="//..." />
-            <marker date="1497052496000" expanded="true" signature="184:329" ph="..." />
-            <marker date="1497052496000" expanded="true" signature="331:408" ph="/** 提供Model、View、Control、Sync、RTools等系列便捷类库 ...*/" />
-            <marker date="1497052496000" expanded="true" signature="410:442" ph="/** 页面渲染 ...*/" />
-            <marker date="1497052496000" expanded="true" signature="444:1012" ph="/** @method page ...*/" />
-            <marker date="1497052496000" expanded="true" signature="1042:1810" ph="{...}" />
-            <marker date="1497052496000" expanded="true" signature="1096:1154" ph="{...}" />
-            <marker date="1497052496000" expanded="true" signature="1113:1148" ph="{&quot;module&quot;: opts...}" />
-            <marker date="1497052496000" expanded="true" signature="1279:1343" ph="{...}" />
-            <marker date="1497052496000" expanded="true" signature="1380:1762" ph="{&quot;container&quot;: 'root'...}" />
-            <marker date="1497052496000" expanded="true" signature="1503:1710" ph="//..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,18 +985,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/Action.js">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <marker date="1497064673000" expanded="true" signature="2102:2290" ph="{&quot;build&quot;: &quot;node_modules/.bin/gulp &amp;&amp; node_modules/.bin/gulp min&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="48" column="41" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="41" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="33" />
           <folding>
             <element signature="n#!!block;n#getField#0" expanded="false" />
             <element signature="n#!!block;n#implement#0" expanded="false" />
@@ -1049,8 +1025,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="84" column="63" lean-forward="false" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="63" />
+        <state relative-caret-position="1095">
+          <caret line="76" column="37" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/Action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding />
         </state>
       </provider>

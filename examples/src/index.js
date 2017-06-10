@@ -13,6 +13,8 @@ class TestModel {
     static a ={
         b : 12
     }
+    static temp = {}
+
     constructor(){
 
     }
@@ -72,12 +74,12 @@ class TestComponent extends Component {
     static defaultProps={}
 
     click(){
-        this.props.setValueByReducers('TestModel.a', {})
+        this.props.setValueByReducers('TestModel.temp', {})
         window.console.log(1111)
     }
 
     render() {
-
+        console.log('age:',this.props.testmodel.get('temp') )
         console.log('age:',this.props.testmodel.get('age') )
         console.log('a.b', this.props.testmodel.get('a').get('b'))
         return (

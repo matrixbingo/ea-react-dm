@@ -48,6 +48,10 @@ let curl = {
         action.data = Immutable.fromJS(action.data)
         return action.path ? data.mergeIn(action.path, action.data) : data.merge(action.data)
     },
+    save:function(data,action){
+        data = getField(data,action.path)
+        return data.setIn(action.path,action.isImmutable ?Immutable.fromJS(action.data) : action.data)
+    },
     add: function (data, action) {
         data = getField(data, action.path)
         return data.setIn(action.path, action.isImmutable ? Immutable.fromJS(action.data) : action.data)
@@ -131,7 +135,7 @@ export function Model(target) {
             store: null
         }
     }
-    let modelName = target.__name.toLowerCase() || target.name.toLowerCase()
+    let modelName = target.__name ? target.__name.toLowerCase() : target.name.toLowerCase()
 
     if (modelName.indexOf('model') <= -1) {
         modelName += 'model'

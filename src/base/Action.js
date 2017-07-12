@@ -10,3 +10,4 @@ export default class Action {
         return this.update(valueLink, val)
     }
 }
+

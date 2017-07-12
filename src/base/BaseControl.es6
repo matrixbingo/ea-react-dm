@@ -1,8 +1,9 @@
 export {fetch} from '../control'
-import {Action} from 'Action'
+import Action from 'Action'
 import LoadingBar from './LoadingBar'
+import _ from 'underscore'
 
-export const ajax = {
+const ajax = {
     /**
      * 组合请求参数
      * @param {b:1,c:2}

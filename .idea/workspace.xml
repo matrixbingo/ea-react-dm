@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49015dac-f036-4e54-9f77-74f43a8f1e8b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/base/BaseControl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/base/Loading.js" afterPath="$PROJECT_DIR$/src/base/LoadingBar.js" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -538,12 +534,12 @@
       <workItem from="1499838312070" duration="3311000" />
       <workItem from="1499917020856" duration="367000" />
       <workItem from="1499917438797" duration="43000" />
-      <workItem from="1499936269541" duration="1890000" />
+      <workItem from="1499936269541" duration="1949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52618000" />
+    <option name="totallyTimeSpent" value="52677000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

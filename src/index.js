@@ -1,7 +1,6 @@
 export {Model} from './model'
 export {Control,Sync,fetch} from './control'
 export {View} from './view'
-export Action from './base/Action'
 export BaseControl from './base/BaseControl'
 //export {binding} from './valuelink'
 

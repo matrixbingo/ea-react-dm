@@ -2,6 +2,7 @@ export {Model} from './model'
 export {Control,Sync,fetch} from './control'
 export {View} from './view'
 export Action from './base/Action'
+export {Loading} from './base/Loading'
 //export {binding} from './valuelink'
 
 import extend from 'extend'

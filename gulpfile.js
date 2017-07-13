@@ -29,7 +29,7 @@ gulp.task('karma', function(done) {
 
 gulp.task('open', function() {
     gulp.src(__filename)
-        .pipe(open({ uri: "http://" + (internalIP.v4() || '127.0.0.1') + ":8081/index.html" }));
+        .pipe(open({ uri: "http://" + ('127.0.0.1') + ":8081/index.html" }));
 });
 
 gulp.task('hot', function(callback) {

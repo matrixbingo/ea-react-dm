@@ -1,7 +1,7 @@
 import {MaskBar, LoadingBar} from 'gfs-loadingbar'
 import RTools from 'gfs-react-tools'
 
-export function Loading(type, params) {
+export default function Loading(type, params) {
     return function (target, name, descriptor) {
         type = type.toLowerCase()
         const loadingBar = new LoadingBar()

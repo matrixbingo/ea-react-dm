@@ -11,12 +11,12 @@ export function Loading(type, params) {
             switch (type) {
                 case 'loading':
                     return function () {
-                        RTools.addLoadingBar(loadingBar)
+                        RTools.addLoadingBar && RTools.addLoadingBar(loadingBar)
                         return c.apply(this, arguments)
                     }
                 case 'mosk':
                     return function () {
-                        RTools.addLoadingBar(new MaskBar({text: text}))
+                        RTools.addLoadingBar && RTools.addLoadingBar(new MaskBar({text: text}))
                         return c.apply(this, arguments)
                     }
                 default:return function () {

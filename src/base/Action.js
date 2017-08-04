@@ -22,7 +22,7 @@ class BaseControl {
         if (isEmptyObject(val)) {
             return this.save(valueLink, Immutable.fromJS(val))
         }
-        return this.update(valueLink, val)
+        return this.save(valueLink, val)
     }
 }
 

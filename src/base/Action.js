@@ -93,12 +93,18 @@ function Loading(type, params) {
 
 export default class Action extends BaseControl{
 
-    static fetchGet(url, param, valueLink, _this, callBack) {
-        return ajax.fetch(this, 'GET', url, param, valueLink, _this, callBack)
+    static fetch(url, type, param, valueLink, _this, callBack) {
+        return ajax.fetch(this, type, url, param, valueLink, _this, callBack)
     }
 
-    static fetchPost(url, param, valueLink, _this, callBack) {
-        return ajax.fetch(this, 'POST', url, param, valueLink, _this, callBack)
+    @Loading('mosk')
+    static fetchMosk(url, type, param, valueLink, _this, callBack) {
+        return ajax.fetch(this, type, url, param, valueLink, _this, callBack)
+    }
+
+    @Loading('loading')
+    static fetchLoading(url, type, param, valueLink, _this, callBack) {
+        return ajax.fetch(this, type, url, param, valueLink, _this, callBack)
     }
 
     @Loading('mosk')

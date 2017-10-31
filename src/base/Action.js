@@ -10,7 +10,7 @@ import _ from 'underscore'
  * 例：a.b.c修改model a的b.c值
  */
 class BaseControl {
-    static setValueByReducers(valueLink, val){
+    static setValueByReducers(valueLink, val) {
         (!valueLink || !val) && window.console.error('Action valueLink or val is undifened', valueLink, val)
         const isEmptyObject = function (e) {
             var t
@@ -49,15 +49,15 @@ const ajax = {
     },
     fetch: function (connect, type, url, param, valueLink, _this, callBack) {
         return (dispatch) => {
-            fetch(url + ajax.initParams(param), {
+            fetch(url + (type.toLowerCase() == 'get' ? ajax.initParams(param) : ''), {
                 method: type,
                 timeout: 60000
             }).then((data) => {
                 _this && callBack && callBack(_this, data)
                 dispatch(connect.save(valueLink, Immutable.fromJS(data.msg)))
             }, (error) => {
-                _this && _this.showMsg && _this.showMsg('error', 'URL:' + url + ', 查询失败!!!')
-                window.console.error('ajaxGet : ' + url + ' error!!', error)
+                _this && _this.showMsg && _this.showMsg('error', 'URL:' + url + ', 提交失败!!!')
+                window.console.error('ajax:' + url + ' error!!', error)
             })
         }
     }
@@ -81,9 +81,10 @@ function Loading(type, params) {
                         RTools.addLoadingBar && RTools.addLoadingBar(new MaskBar({text: text}))
                         return c.apply(this, arguments)
                     }
-                default:return function () {
-                    return c.apply(this, arguments)
-                }
+                default:
+                    return function () {
+                        return c.apply(this, arguments)
+                    }
             }
         })(descriptor.value)
         descriptor.value = f
@@ -91,7 +92,7 @@ function Loading(type, params) {
     }
 }
 
-export default class Action extends BaseControl{
+export default class Action extends BaseControl {
 
     static fetch(url, type, param, valueLink, _this, callBack) {
         return ajax.fetch(this, type, url, param, valueLink, _this, callBack)

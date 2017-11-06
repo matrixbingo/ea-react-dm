@@ -48,11 +48,23 @@ const ajax = {
         return '?' + str.substring(1, str.length)
     },
     fetch: function (connect, type, url, param, valueLink, _this, callBack) {
-        return (dispatch) => {
-            fetch(url + (type.toLowerCase() == 'get' ? ajax.initParams(param) : ''), {
+        let _data = {
+            method: type,
+            timeout: 60000
+        }
+
+        if (type.toLowerCase() != 'get') {
+            _data = {
+                body: JSON.stringify(param),
                 method: type,
-                timeout: 60000
-            }).then((data) => {
+                timeout: 60000,
+                header: {
+                    'Content-Type': 'application/json'
+                }
+            }
+        }
+        return (dispatch) => {
+            fetch(url + (type.toLowerCase() == 'get' ? ajax.initParams(param) : ''), _data).then((data) => {
                 _this && callBack && callBack(_this, data)
                 dispatch(connect.save(valueLink, Immutable.fromJS(data.msg)))
             }, (error) => {

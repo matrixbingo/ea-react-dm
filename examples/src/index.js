@@ -1,9 +1,9 @@
+import React, { Component /*,PropTypes*/} from 'react'
 import {Model,Control,Sync,View,page} from '../../src/index.js'
 import Action from '../../src/base/Action'
-import Immutable from 'immutable'
-import Hello from './demo/Hello'
+//import Hello from './demo/Hello'
 
-new Hello().show()
+//new Hello().show()
 
 @Model
 class TestModel {
@@ -54,7 +54,7 @@ class TestControl extends Action{
 }
 
 
-import React, { Component /*,PropTypes*/} from 'react'
+
 
 
 @View(TestControl)
@@ -79,13 +79,14 @@ class TestComponent extends Component {
     }
 
     render() {
+        window.console.log(1111)
         console.log('age:',this.props.testmodel.get('temp') )
         console.log('age:',this.props.testmodel.get('age') )
         console.log('a.b', this.props.testmodel.get('a').get('b'))
         return (
             <div>
                 <span style={{color:'red'}} onClick={this.click.bind(this)}>
-                    {this.props.testmodel.getIn(['xq','test','name'])}
+                   click {this.props.testmodel.getIn(['xq','test','name'])}
                 </span>
             </div>
         )

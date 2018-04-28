@@ -36,7 +36,7 @@ wbpk.module.loaders=wbpk.module.loaders.filter(function(item){
 ]);
 
 module.exports.server= function(){
-    var devPort = 8081;
+    var devPort = 8888;
     wbpk.devtool = 'eval';
     for (var key in wbpk.entry) {
         var ar = wbpk.entry[key];

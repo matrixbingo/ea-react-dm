@@ -25,10 +25,11 @@ npm install ea-react-dm --save
 	#例子演示	
 	npm start
 ```
-
-
 ## Repair
-`version 2.0.1` 更新package.json react支持到1.6
-`version 1.3.3` 稳定版 react 1.4
-`version 1.1.0` 新增Action 和 双向绑定set，get方法 <br/>
+```
+    `version 2.0.2` setValueByReducers 添加回调
+    `version 2.0.1` 更新package.json react支持到1.6
+    `version 1.3.3` 稳定版 react 1.4
+    `version 1.1.0` 新增Action 和 双向绑定set，get方法 <br/>
+```
 

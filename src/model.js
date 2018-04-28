@@ -50,7 +50,12 @@ let curl = {
     },
     save: function (data, action) {
         data = getField(data, action.path)
-        return data.setIn(action.path, action.isImmutable ? Immutable.fromJS(action.data) : action.data)
+        data = data.setIn(action.path, action.isImmutable ? Immutable.fromJS(action.data) : action.data)
+        const timer = setTimeout(function () {
+            action.onComplete && action.onComplete()
+            window.clearTimeout(timer)
+        }, 500)
+        return data
     },
     add: function (data, action) {
         data = getField(data, action.path)
